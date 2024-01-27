@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calcOuterBorder {
+    display:grid;
+    grid-template-columns: (1,1fr);
+    width: 100vw;
+    max-width: 660px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid red; */
+}
+.calcDisplay {
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    width: 100%;
+    max-width: 660px;
+    height: 12vh;
+    /* padding: 10px; */
+    margin: 10px;
+    font-size: 5vh;
+    /* border: 1px solid blue; */
+}
+.calcButtons {
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: :repeat(4,1fr) ;
+    width: 90vw;
+    max-width: 660px;
+    height: 70vh;
+    margin: 10px;
+    /* border: 2px solid violet; */
+}
+.calbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    /* border: 2px solid green; */
+}
+input[type=button] {
+    background-color: black;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 10vh;
+    padding: 2px;
+    margin: 2px;
+    font-size: 5vh;
+}
+input[type=text] {
+    background-color: black;
+    border: 2px solid orange;
+    color: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 10vh;
+    font-size: 5vh;
+}
+#equalToButton{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
